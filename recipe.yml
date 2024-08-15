@@ -22,26 +22,31 @@ stages:
     - lpkg --unlock
     - apt-get update
   
-  - name: zen-kernel-debs
-    type: apt
-    source:
-      packages:
-        - git
-        - build-essential
-        - libssl-dev
-        - libncurses-dev
-        - bison
-        - flex 
-        - libelf-dev  
+  # - name: zen-kernel-debs
+  #   type: apt
+  #   source:
+  #     packages:
+  #       - git
+  #       - build-essential
+  #       - libssl-dev
+  #       - libncurses-dev
+  #       - bison
+  #       - flex 
+  #       - libelf-dev  
   
-  - name: zen-kernel-install
+  # - name: zen-kernel-install
+  #   type: shell
+  #   commands:
+  #     - mkdir -p /sources/zen-kernel-install
+  #     - cd /sources/zen-kernel-install
+  #     - git clone https://github.com/zen-kernel/zen-kernel.git
+  #     - cd zen-kernel
+  #     - ./build.sh
+
+  - name: liquorix-kernel-install
     type: shell
     commands:
-      - mkdir -p /sources/zen-kernel-install
-      - cd /sources/zen-kernel-install
-      - git clone https://github.com/zen-kernel/zen-kernel.git
-      - cd zen-kernel
-      - ./build.sh
+      - curl -s 'https://liquorix.net/install-liquorix.sh' | sudo bash
 
   - name: installing-drivers
     type: includes
