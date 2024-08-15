@@ -5,7 +5,7 @@ This is a Custom Nvidia Vanilla OS Image with LenovoLegionLinux driver included.
 # How to use
 
 - Edit the /etc/abroot/abroot.json file with the `abroot config-editor edit` command.
-- Change the "name" entry from something like vanilla-os/desktop to meowrosya/plasma (Note: All characters must be in lowercase).
+- Change the "name" entry from something like vanilla-os/desktop to meowrosya/legion-nvidia (Note: All characters must be in lowercase).
 - Now, Run `abroot upgrade -f` to switch to your custom image.
 
 ## Dont need Nvidia?
