@@ -25,7 +25,7 @@ stages:
   - name: installing-drivers
     type: includes
     includes:
-      - gh:MeowRosya/vanilla-os-modules:main:modules/00-install-lll-driver.yml
+      - gh:MeowRosya/legion-modules:main:modules/00-install-lll-driver.yml
       
   - name: set-image-name-abroot
     type: includes
