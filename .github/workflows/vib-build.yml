@@ -10,6 +10,10 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions:
+    contents: read
+    packages: write
+
 env:
   CUSTOM_IMAGE_NAME: nvidia-legion
   BUILDX_NO_DEFAULT_ATTESTATIONS: 1
