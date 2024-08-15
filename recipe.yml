@@ -1,5 +1,4 @@
-# vib
-name: Nvidia Legion Image # Replace this name with your image name
+name: Vanilla Desktop Nvidia with LenovoLegionLinux # Replace this name with your image name
 id: nvidia-legion # Replace this ID with your image ID
 stages:
 - id: build
@@ -27,7 +26,6 @@ stages:
     includes:
       - gh:MeowRosya/vanilla-os-modules:main:modules/00-install-lll-driver.yml
       
-
   - name: set-image-name-abroot
     type: includes
     includes:
