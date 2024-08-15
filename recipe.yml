@@ -21,6 +21,27 @@ stages:
     commands:
     - lpkg --unlock
     - apt-get update
+  
+  - name: zen-kernel-debs
+    type: apt
+    source:
+      packages:
+        - git
+        - build-essential
+        - libssl-dev
+        - libncurses-dev
+        - bison
+        - flex 
+        - libelf-dev  
+  
+  - name: zen-kernel-install
+    type: shell
+    commands:
+      - mkdir -p /sources/zen-kernel-install
+      - cd /sources/zen-kernel-install
+      - git clone https://github.com/zen-kernel/zen-kernel.git
+      - cd zen-kernel
+      - ./build.sh
 
   - name: installing-drivers
     type: includes
