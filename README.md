@@ -14,3 +14,9 @@ If you dont need image with Nvidia driver then check [Legion-Image](https://gith
 
 > [!caution]
 > I am neither the developer of Vanilla OS nor the driver. If you have any problems with the software or driver, then contact upstream.
+
+# Legal Matters
+
+Reference to any Lenovo products, services, processes, or other information and/or use of Lenovo Trademarks does not constitute or imply endorsement, sponsorship, or recommendation thereof by Lenovo.
+
+The use of Lenovo®, Lenovo Legion™, Yoga®, IdeaPad® or other trademarks within this website and associated tools and libraries is only to provide a recognisable identifier to users to enable them to associate that these tools will work with Lenovo laptops.
