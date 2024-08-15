@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 env:
-  CUSTOM_IMAGE_NAME: nvidia-legion
+  CUSTOM_IMAGE_NAME: legion-nvidia
   BUILDX_NO_DEFAULT_ATTESTATIONS: 1
 
 jobs:

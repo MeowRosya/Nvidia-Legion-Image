@@ -1,6 +1,6 @@
 # vib
 name: Nvidia Legion Image # Replace this name with your image name
-id: nvidia-legion # Replace this ID with your image ID
+id: legion-nvidia # Replace this ID with your image ID
 stages:
 - id: build
   base: ghcr.io/vanilla-os/nvidia:main # Optionally, Replace this image URL with a different one i.e. nvidia:main, etc
